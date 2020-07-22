@@ -2,6 +2,8 @@
 
 A simple package which adds a strikethrough command, `\strike`.
 
+![](https://raw.githubusercontent.com/ctrlcctrlv/sile-strike/master/examples/strike.png)
+
 ```tex
 \begin[papersize=50mm x 30mm]{document}
 \script[src=packages/strike]
