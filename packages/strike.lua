@@ -19,19 +19,19 @@ function package:registerCommands ()
     table.remove(SILE.typesetter.state.nodes) -- steal it back
 
     SILE.call("rebox", { width = 0 }, content)
-    local first = options.raise or SILE.measurement("2zw")
+    local first = options.raise or SILE.measurement("2pt")
     local i = 0
-    local height = options.height or SILE.measurement("1.5zw")
+    local height = options.height or SILE.measurement("1.5pt")
 
     if options.n and options.n == "triple" then
       i = 2
-      first = options.raise or SILE.measurement("1.5zw")
+      first = options.raise or SILE.measurement("1.5pt")
     elseif options.n and options.n == "double" then
       i = 1
     end
 
     if i > 0 and not options.height then
-      height = SILE.measurement("1zw")
+      height = SILE.measurement("1pt")
     end
 
     if options.color then
@@ -46,7 +46,7 @@ function package:registerCommands ()
           end)
         end)
       end)
-      first = first + SILE.measurement("2zw")
+      first = first + SILE.measurement("2pt")
     end
     SILE.call("glue", { width = hbox.width })
   end, "Strikethrough text")
