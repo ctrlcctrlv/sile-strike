@@ -1,7 +1,7 @@
 \begin[papersize=50mm x 30mm]{document}
 % sile examples/strike.sil && gm convert -density 400 examples/strike.pdf -density 400 examples/strike.png
-\script[src=packages/strike]
-\noindent \strike{I am the}\strike[height=0.5zw]{ Eggman}
+\use[module=packages.strike]
+\noindent \strike{I am the}\strike[height=0.5pt]{ Eggman}
 
 \noindent \strike[n=double]{They are the Eggmen}
 
